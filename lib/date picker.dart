@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
+//import 'package:intl/intl.dart';
 
 void main() {
   return runApp(dateapp());
@@ -25,7 +25,7 @@ class datepage extends StatefulWidget {
 class _datepageState extends State<datepage> {
   @override
   Widget build(BuildContext context) {
-    var time = DateTime.now();
+    // var time = DateTime.now();
     return Scaffold(
       appBar: AppBar(
         title: Text(
