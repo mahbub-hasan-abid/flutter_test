@@ -25,7 +25,7 @@ class datepage extends StatefulWidget {
 class _datepageState extends State<datepage> {
   @override
   Widget build(BuildContext context) {
-    // var time = DateTime.now();
+    //  var time = DateTime.now();
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -51,7 +51,18 @@ class _datepageState extends State<datepage> {
                   print('date picked : ${datepic.day}');
                 }
               },
-              child: Text("show"))
+              child: Text("show")),
+          ElevatedButton(
+              onPressed: () async {
+                TimeOfDay? pickedTime = await showTimePicker(
+                    context: context,
+                    initialTime: TimeOfDay.now(),
+                    initialEntryMode: TimePickerEntryMode.input);
+                if (pickedTime != null)
+                  print(
+                      "time selected : ${pickedTime.hour}: ${pickedTime.minute}");
+              },
+              child: Text("pick time"))
         ],
       ),
     );
