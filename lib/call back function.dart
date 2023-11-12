@@ -23,14 +23,12 @@ class callbackscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("callback bar")),
-      body: ElevatedButton(
-        child: Text("click me!"),
-        onPressed:
-            callback22, /*() {
+      appBar: AppBar(title: const Text("callback bar")),
+      body: const ElevatedButton(onPressed: callback22, child: Text("click me!")
+          /*() {
          // print("clicked!!!!!!!");
         },*/
-      ),
+          ),
     );
   }
 }
