@@ -24,13 +24,29 @@ class custom_widget_screen extends StatelessWidget {
         appBar: AppBar(
           title: Text("app bar"),
         ),
-        body: RoundedButton(
-          btnname: "log In !",
-          icon: Icon(Icons.lock),
-          textstyle: myText21(),
-          callBack: () {
-            print("log in!!!");
-          },
+        body: Center(
+          child: Column(
+            children: [
+              Container(
+                width: 200,
+                child: RoundedButton(
+                  btnname: "  log In !",
+                  icon: const Icon(Icons.lock),
+                  textstyle: myText21(),
+                  callBack: () {
+                    print("log in!!!");
+                  },
+                ),
+              ),
+              Container(
+                width: 200,
+                child: const RoundedButton(
+                    btnname: "  Play",
+                    textstyle: TextStyle(fontSize: 23),
+                    icon: Icon(Icons.play_arrow)),
+              )
+            ],
+          ),
         ));
   }
 }
