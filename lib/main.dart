@@ -98,3 +98,26 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+class MN extends StatefulWidget {
+  const MN({super.key});
+
+  @override
+  State<MN> createState() => _MNState();
+}
+
+class _MNState extends State<MN> {
+  int x = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        children: [
+          ElevatedButton(onPressed: () {}, child: Text('Te')),
+          Text(x.toString())
+        ],
+      ),
+    );
+  }
+}
