@@ -30,7 +30,11 @@ class _CounterAppScreenState extends State<CounterAppScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Counter app Bar')),
+      appBar: AppBar(
+          title: const Center(
+              child: Text(
+        'Counter app Bar',
+      ))),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
