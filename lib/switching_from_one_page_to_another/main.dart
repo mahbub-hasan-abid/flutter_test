@@ -32,9 +32,25 @@ class SecondPage extends StatelessWidget {
             width: double.infinity,
             color: Colors.black,
             child: Center(
-              child: Text(
-                'PSTU',
-                style: TextStyle(fontSize: 46, color: Colors.white),
+              child: Column(
+                children: [
+                  Text(
+                    'PSTU',
+                    style: TextStyle(fontSize: 46, color: Colors.white),
+                  ),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(
+                          builder: (context) {
+                            return FirstScreen();
+                          },
+                        ));
+                      },
+                      child: Text(
+                        'Back ',
+                        style: TextStyle(color: Colors.black, fontSize: 30),
+                      ))
+                ],
               ),
             )));
   }
