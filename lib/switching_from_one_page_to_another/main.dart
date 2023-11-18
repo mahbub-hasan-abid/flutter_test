@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/switching_from_one_page_to_another/splash_screen.dart';
 import 'package:flutter_application_1/switching_from_one_page_to_another/switching_from_one_page_to_another_2.dart';
 
 void main() {
@@ -11,9 +12,10 @@ class SwitchPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'app',
       theme: ThemeData(primarySwatch: Colors.amber),
-      home: FirstScreen(),
+      home: SplashScreen(),
     );
   }
 }
@@ -28,30 +30,32 @@ class SecondPage extends StatelessWidget {
           title: Text('second page'),
         ),
         body: Container(
-            height: double.infinity,
-            width: double.infinity,
-            color: Colors.black,
-            child: Center(
-              child: Column(
-                children: [
-                  Text(
-                    'PSTU',
-                    style: TextStyle(fontSize: 46, color: Colors.white),
-                  ),
-                  ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(
-                          builder: (context) {
-                            return FirstScreen();
-                          },
-                        ));
-                      },
-                      child: Text(
-                        'Back ',
-                        style: TextStyle(color: Colors.black, fontSize: 30),
-                      ))
-                ],
-              ),
-            )));
+          height: double.infinity,
+          width: double.infinity,
+          color: Colors.black,
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'PSTU',
+                  style: TextStyle(fontSize: 46, color: Colors.white),
+                ),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(
+                        builder: (context) {
+                          return FirstScreen();
+                        },
+                      ));
+                    },
+                    child: Text(
+                      '<--Backk ',
+                      style: TextStyle(color: Colors.black, fontSize: 30),
+                    ))
+              ],
+            ),
+          ),
+        ));
   }
 }
