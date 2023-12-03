@@ -42,7 +42,7 @@ class _sp_loginState extends State<sp_login> {
     var logPref = await SharedPreferences.getInstance();
 
     var logVal = logPref.getBool('LOGIN');
-    if (logVal == null || logVal == 'false') {
+    if (logVal == null || logVal == false) {
       Timer(Duration(seconds: 4), () {
         Navigator.pushReplacement(
             context,
