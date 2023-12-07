@@ -1,64 +1,48 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/PageView/page1.dart';
-import 'package:flutter_application_1/PageView/page2.dart';
 
-void main(List<String> args) {
-  runApp(tapbr());
+void main() {
+  runApp(MyApp());
 }
 
-class tapbr extends StatelessWidget {
-  const tapbr({super.key});
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.amber),
-      home: tapbrFp(),
+      home: MyHomePage(),
     );
   }
 }
 
-class tapbrFp extends StatefulWidget {
-  @override
-  State<tapbrFp> createState() => _tapbrFpState();
-}
-
-class _tapbrFpState extends State<tapbrFp> with SingleTickerProviderStateMixin {
-  var tabcont;
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    tabcont = TabController(length: 2, vsync: this);
-  }
-
+class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('App Bar'),
-        bottom: TabBar(
-            controller: tabcont,
-            indicator: BoxDecoration(
-              border: Border(
-                bottom: BorderSide(
-                  color: Colors.black,
-                  width: 3,
-                ),
-              ),
+      body: CustomScrollView(
+        slivers: [
+          SliverAppBar(
+            expandedHeight: 200.0,
+            floating:
+                true, // Set to true if you want the app bar to be visible while scrolling
+            pinned:
+                true, // Set to true if you want the app bar to remain visible at the top
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text('SilverAppBar Example'),
             ),
-            tabs: [
-              Tab(
-                text: 'Tab 1',
-              ),
-              Tab(
-                text: 'Tab 2',
-              ),
-            ]),
-//backgroundColor: const Color.fromARGB(255, 165, 29, 29),
+          ),
+
+          // Other SliverList, SliverGrid, or other slivers can be added below
+          SliverList(
+            delegate: SliverChildBuilderDelegate(
+              (BuildContext context, int index) {
+                return ListTile(
+                  title: Text('Item $index'),
+                );
+              },
+              childCount: 20,
+            ),
+          ),
+        ],
       ),
-      body: TabBarView(controller: tabcont, children: [Page1(), Page2()]),
     );
   }
 }
