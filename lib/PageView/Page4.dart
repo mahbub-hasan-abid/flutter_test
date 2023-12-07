@@ -6,12 +6,10 @@ class Page4 extends StatelessWidget {
     return Scaffold(
       body: Container(
         color: Colors.black,
-        // width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
+        width: 100, // MediaQuery.of(context).size.width,
+        height: 200, //MediaQuery.of(context).size.height,
         child: Container(
-          height: 60,
-          width: 30,
-          color: Colors.blue,
+          color: const Color.fromARGB(255, 149, 158, 165),
         ),
       ),
     );
