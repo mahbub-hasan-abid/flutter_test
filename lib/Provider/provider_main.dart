@@ -59,9 +59,7 @@ class _pv_firstState extends State<pv_first> {
             ElevatedButton(
                 onPressed: () {
                   providerData.value = 0;
-                  setState(() {
-                    providerData.value;
-                  });
+                  providerData.updateScreen();
                 },
                 child: Text('Make it zero!!'))
           ],

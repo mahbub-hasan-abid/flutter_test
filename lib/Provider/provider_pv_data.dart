@@ -6,4 +6,8 @@ class data_pv extends ChangeNotifier {
     value++;
     notifyListeners();
   }
+
+  updateScreen() {
+    notifyListeners();
+  }
 }
