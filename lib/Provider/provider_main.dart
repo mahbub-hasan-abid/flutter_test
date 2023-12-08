@@ -55,7 +55,15 @@ class _pv_firstState extends State<pv_first> {
                         builder: (context) => recData(),
                       ));
                 },
-                child: Text('Move to next page'))
+                child: Text('Move to next page')),
+            ElevatedButton(
+                onPressed: () {
+                  providerData.value = 0;
+                  setState(() {
+                    providerData.value;
+                  });
+                },
+                child: Text('Make it zero!!'))
           ],
         ),
       ),
