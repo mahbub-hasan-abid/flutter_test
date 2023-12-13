@@ -70,7 +70,7 @@ class alertFirst extends StatelessWidget {
                   onPressed: () {
                     showDialog(
                       context: ctx,
-                      builder: (dcontext) {
+                      builder: (context) {
                         int x = 0;
                         return Dialog(
                           child: Container(
@@ -95,10 +95,6 @@ class alertFirst extends StatelessWidget {
                                       ElevatedButton(
                                           onPressed: () {
                                             // Navigator.pop(ctx);
-                                            setState() {
-                                              x++;
-                                              print(x);
-                                            }
                                           },
                                           child: Text('Ok')),
                                     ],
