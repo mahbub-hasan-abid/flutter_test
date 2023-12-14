@@ -31,20 +31,25 @@ class _drpfState extends State<drpf> {
       appBar: AppBar(
         title: Text('dropdownbox'),
       ),
-      body: Column(children: [
-        Text(set),
-        DropdownButton(
-          items: [
-            DropdownMenuItem(child: Text('One')),
-            DropdownMenuItem(child: Text('Two'))
-          ],
-          onChanged: (value) {
-            setState(() {
-              set = value;
-            });
-          },
-        )
-      ]),
+      body: Center(
+        child: Container(
+          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            Text(set),
+            DropdownButton(
+              iconSize: 150,
+              items: [
+                DropdownMenuItem(value: 'one', child: Text('One')),
+                DropdownMenuItem(value: 'two', child: Text('Two'))
+              ],
+              onChanged: (value) {
+                setState(() {
+                  set = value!;
+                });
+              },
+            )
+          ]),
+        ),
+      ),
     );
   }
 }
