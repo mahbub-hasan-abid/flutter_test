@@ -45,28 +45,34 @@ class _disMfState extends State<disMf> {
                 subtitle: Text('kuakata tour'),
                 trailing: Icon(Icons.man),
               )),
-          Row(
-            children: [
-              Checkbox(
-                value: bValue,
-                onChanged: (value) {
-                  print(value);
-                  setState(() {
-                    bValue = value!;
-                  });
-                },
-              ),
-              Text(bValue ? 'Checked' : 'unchecked'),
-            ],
+          Tooltip(
+            message: 'Row',
+            child: Row(
+              children: [
+                Checkbox(
+                  value: bValue,
+                  onChanged: (value) {
+                    print(value);
+                    setState(() {
+                      bValue = value!;
+                    });
+                  },
+                ),
+                Text(bValue ? 'Checked' : 'unchecked'),
+              ],
+            ),
           ),
-          Switch(
-            focusColor: (Colors.greenAccent),
-            value: bValue,
-            onChanged: (value) {
-              setState(() {
-                bValue = value;
-              });
-            },
+          Tooltip(
+            message: 'switCH',
+            child: Switch(
+              focusColor: (Colors.greenAccent),
+              value: bValue,
+              onChanged: (value) {
+                setState(() {
+                  bValue = value;
+                });
+              },
+            ),
           ),
           ExpansionTile(
             leading: Text('his his'),
@@ -79,7 +85,12 @@ class _disMfState extends State<disMf> {
                 color: Colors.yellow,
               )
             ],
-          )
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.dashboard),
+            tooltip: 'DashBoard',
+          ),
         ],
       ),
     );
