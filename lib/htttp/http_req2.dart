@@ -56,13 +56,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 return Column(children: [
                   Card(
                     color: Color.fromARGB(255, 213, 223, 226),
-                    child: ListTile(
+                    child: ExpansionTile(
                       leading:
                           CircleAvatar(child: Text('${data[index]['id']}')),
                       title: Text(data[index]['title']),
                       trailing: index % 2 == 0
                           ? Icon(Icons.emoji_people_outlined)
                           : Icon(Icons.ac_unit_outlined),
+                      children: [
+                        Divider(),
+                        Container(
+                          // color: Color.fromARGB(255, 253, 253, 253),
+                          child: Text(data[index]['body']),
+                        )
+                      ],
                     ),
                   ),
                 ]);
