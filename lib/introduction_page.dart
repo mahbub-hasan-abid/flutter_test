@@ -12,7 +12,7 @@ class MMyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Material App',
         theme: ThemeData(primarySwatch: Colors.amber),
-        home: ftname());
+        home: const ftname());
   }
 }
 
@@ -23,11 +23,11 @@ class ftname extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 102, 100, 133),
+        backgroundColor: const Color.fromARGB(255, 102, 100, 133),
         title: const Text('Material App Bar'),
       ),
       body: IntroductionScreen(
-        globalBackgroundColor: Color.fromARGB(255, 252, 252, 252),
+        globalBackgroundColor: const Color.fromARGB(255, 252, 252, 252),
         pages: [
           PageViewModel(
               title: 'Welcome',
@@ -44,9 +44,9 @@ class ftname extends StatelessWidget {
         ],
         onDone: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => Page1()));
+              context, MaterialPageRoute(builder: (context) => const Page1()));
         },
-        done: CircleAvatar(
+        done: const CircleAvatar(
           backgroundColor: Colors.black,
           child: Icon(
             Icons.done,
@@ -56,12 +56,12 @@ class ftname extends StatelessWidget {
         ),
         showNextButton: true,
         next: Card(
-          margin: EdgeInsets.all(20),
-          color: Color.fromARGB(255, 102, 100, 133),
+          margin: const EdgeInsets.all(20),
+          color: const Color.fromARGB(255, 102, 100, 133),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
           ),
-          child: Center(
+          child: const Center(
               child: Text(
             '  next-> ',
             style: TextStyle(
@@ -71,16 +71,16 @@ class ftname extends StatelessWidget {
         showDoneButton: true,
         showBackButton: false,
         back: Card(
-          margin: EdgeInsets.all(20),
-          color: Color.fromARGB(255, 102, 100, 133),
+          margin: const EdgeInsets.all(20),
+          color: const Color.fromARGB(255, 102, 100, 133),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
           ),
-          child: Text('Previous'),
+          child: const Text('Previous'),
         ),
         showSkipButton: true,
-        skip: Text('Skip'),
-        dotsDecorator: DotsDecorator(
+        skip: const Text('Skip'),
+        dotsDecorator: const DotsDecorator(
           color: Colors.red,
           activeColor: Colors.green,
           size: Size(10, 10),
