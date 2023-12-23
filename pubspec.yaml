@@ -29,7 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.2
-  
+  flare_flutter: ^3.0.2
   flutter:
     sdk: flutter
   fluttertoast: ^8.2.4
@@ -38,9 +38,9 @@ dependencies:
   http_parser: ^4.0.2
   image_picker: ^1.0.4
   image_picker_for_web: ^3.0.1
+  introduction_screen: ^3.1.12
   provider: ^6.1.1
   shared_preferences: ^2.2.2
-  flare_flutter: ^3.0.2
 
 dev_dependencies:
   flutter_lints: ^2.0.0
