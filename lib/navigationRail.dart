@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/PageView/Page4.dart';
 import 'package:flutter_application_1/PageView/page1.dart';
-import 'package:flutter_application_1/PageView/page2.dart';
-import 'package:flutter_application_1/PageView/page3.dart';
 import 'package:flutter_application_1/PageView/page5.dart';
 
 void main(List<String> args) {
