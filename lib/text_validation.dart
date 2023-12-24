@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/PageView/page1.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 void main() => runApp(MyApp());
 
@@ -98,6 +99,7 @@ class home extends StatelessWidget {
                   onPressed: () {
                     print('pressed');
                     if (_fromKey.currentState!.validate()) {
+                      showToast(_name.text);
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context1) => Page1()));
                     }
@@ -109,4 +111,16 @@ class home extends StatelessWidget {
       ),
     );
   }
+}
+
+void showToast(var name) {
+  Fluttertoast.showToast(
+    msg: "Congratualtion $name",
+    toastLength: Toast.LENGTH_SHORT,
+    gravity: ToastGravity.BOTTOM,
+    timeInSecForIosWeb: 1,
+    backgroundColor: Color.fromARGB(255, 209, 8, 8),
+    textColor: Colors.white,
+    fontSize: 26.0,
+  );
 }
