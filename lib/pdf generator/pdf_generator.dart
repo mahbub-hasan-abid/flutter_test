@@ -51,7 +51,20 @@ class MyApp extends StatelessWidget {
           return pw.ConstrainedBox(
             constraints: pw.BoxConstraints.expand(),
             child: pw.FittedBox(
-              child: pw.Text('Hello World'),
+              child: pw.Text('Hello World vv'),
+            ),
+          );
+        },
+      ),
+    );
+    doc.addPage(
+      pw.Page(
+        pageFormat: format,
+        build: (pw.Context context) {
+          return pw.ConstrainedBox(
+            constraints: pw.BoxConstraints.expand(),
+            child: pw.FittedBox(
+              child: pw.Text('Hello World vv'),
             ),
           );
         },
