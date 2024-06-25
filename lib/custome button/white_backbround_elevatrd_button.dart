@@ -35,7 +35,8 @@ class _AnimatedButtonState extends State<AnimatedButton> {
                         borderRadius: BorderRadius.circular(155))),
               ),
               onPressed: () {},
-              child: Icon(Icons.add))),
+              child: Icon(Icons.add))
+              ),
     );
   }
 }
