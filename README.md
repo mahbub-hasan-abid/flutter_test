@@ -9,8 +9,7 @@ Welcome to my Flutter Experimental Code Repository! This repository is a collect
 - [Contents](#contents)
 - [Getting Started](#getting-started)
 - [Folder Structure](#folder-structure)
-- [Custom Widgets](#custom-widgets)
-- [Custom Methods/Functions](#custom-methodsfunctions)
+
 - [Contributing](#contributing)
 - [Contact](#contact)
 
@@ -38,11 +37,11 @@ To get a local copy up and running, follow these simple steps:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/mahbub-hasan-abid/flutter_test.git
    ```
 2. Navigate to the project directory
    ```sh
-   cd your-repo-name
+   cd flutter_test
    ```
 3. Install dependencies
    ```sh
@@ -70,21 +69,7 @@ Here's an overview of the folder structure in this repository:
 └── README.md
 ```
 
-## Custom Widgets
 
-This section contains custom widgets that I have created. Each widget is documented with a brief description of its purpose and usage.
-
-- **CustomWidget1**: Description and usage.
-- **CustomWidget2**: Description and usage.
-- ...
-
-## Custom Methods/Functions
-
-This section contains custom methods and functions that I have created. Each method/function is documented with a brief description of its purpose and usage.
-
-- **customMethod1**: Description and usage.
-- **customMethod2**: Description and usage.
-- ...
 
 ## Contributing
 
@@ -98,7 +83,7 @@ Contributions are what make the open-source community such an amazing place to l
 
 ## Contact
 
-If you need any information or have any queries, feel free to contact me. I will be glad to be in touch with you.
+I am happy to address any questions or provide further assistance that you may require. If you need any information or have any queries, feel free to contact me. I will be glad to be in touch with you.
 
 - **Email**: [mahbubhasanabid00@gmail.com](mailto:mahbubhasanabid00@gmail.com)
 - **Telegram**: [@mhabid00](https://t.me/mhabid00)
