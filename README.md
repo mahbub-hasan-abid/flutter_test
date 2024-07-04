@@ -13,7 +13,6 @@ Welcome to my Flutter Experimental Code Repository! This repository is a collect
 - [Custom Methods/Functions](#custom-methodsfunctions)
 - [Contributing](#contributing)
 - [Contact](#contact)
-- [License](#license)
 
 ## Introduction
 
@@ -99,13 +98,15 @@ Contributions are what make the open-source community such an amazing place to l
 
 ## Contact
 
-- **Email**: mahbubhasanabid00@gmail.com
+If you need any information or have any queries, feel free to contact me. I will be glad to be in touch with you.
+
+- **Email**: [mahbubhasanabid00@gmail.com](mailto:mahbubhasanabid00@gmail.com)
 - **Telegram**: [@mhabid00](https://t.me/mhabid00)
-- **WhatsApp**: +8801736299581
+- **WhatsApp**: [01736299581](https://wa.me/8801736299581)
+- **LinkedIn**: [Mahbub Hasan Abid](https://www.linkedin.com/in/mahbub-hasan-abid/)
 
-## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+
 
 ---
 
